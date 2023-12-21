@@ -1,7 +1,6 @@
 import React from "react";
 
 const MovieCard = ({ movie }) => {
-  console.log(movie);
   const { Poster, Title, Year, imdbID } = movie;
   return (
     <div className="movieCard w-52 h-full" id={imdbID}>

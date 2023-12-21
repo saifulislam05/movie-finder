@@ -51,12 +51,13 @@ const Body = () => {
   const handlePrevButtonClick = () => {
     setPage((prevPage) => (prevPage === 1 ? 1 : prevPage - 1));
   };
-
+  
   // Handle the next button click
   const handleNextButtonClick = () => {
     setPage((prevPage) =>
-      prevPage * 10 >= totalResults ? prevPage : prevPage + 1
+    prevPage * 10 >= totalResults ? prevPage : prevPage + 1
     );
+
   };
 console.log(error);
   return (
