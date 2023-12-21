@@ -4,7 +4,7 @@ import React from "react";
 const UserMenu = () => {
   return (
     <div className="dropdown dropdown-end">
-      <label tabindex="0" className="btn btn-ghost btn-circle avatar">
+      <label tabIndex="0" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
           <img
             alt="Tailwind CSS Navbar component"
