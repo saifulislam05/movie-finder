@@ -59,10 +59,11 @@ const Body = () => {
     );
 
   };
-console.log(error);
+
   return (
     <div className="w-11/12 mx-auto flex flex-col justify-center px-5 py-2 lg:px-auto lg:pt-12">
       <SearchBox onSearch={(text) => setInputText(text)} />
+
       <Movies
         inputText={inputText}
         page={page}

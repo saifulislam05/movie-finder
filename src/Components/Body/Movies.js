@@ -5,9 +5,7 @@ import LoadingIndicator from "../LoadingIndicator";
 import Pagination from "../Pagination";
 
 const Movies = ({
-  inputText,
   page,
-  fetchMovies,
   movies,
   totalResults,
   loading,
@@ -16,6 +14,8 @@ const Movies = ({
 }) => {
   return (
     <div>
+      {movies.length > 0 ?<p className="text-green-500">To see movie Details click on any movie!</p>:<></>
+}
       <MovieList movies={movies} />
       {loading && <LoadingIndicator />}
       {totalResults > 10 && (
